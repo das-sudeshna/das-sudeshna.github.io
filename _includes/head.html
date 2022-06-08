@@ -20,4 +20,23 @@
 
 	  gtag('config', 'UA-154770509-1');
 	</script>
+	<script> 
+	$(function(){
+		$("#visible").click(function() {
+		    $('#invisible').toggleClass("show");
+	    });
+	});
+	</script> 
+	<script>
+	    function unhide(divID) {
+		    var item = document.getElementById(divID);
+		    if (item) {
+			item.className=(item.className=='hidden')?'unhidden':'hidden';
+		    }
+	    }
+	</script>
+	<style>
+	  .hide{display:none;}
+	  .show{display:block;}
+	</style>
 </head>
